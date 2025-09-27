@@ -19,13 +19,13 @@
 CTrade trade;
 
 //---- input parameters
-input double RiskPercent      = 0.25;       // Risk percent per trade (0.5 = 0.5%)
-input bool   UseTakeProfit    = true;      // Enable/disable TP
-input ENUM_TIMEFRAMES TimeFrame = PERIOD_H1;
-input double RRRatio          = 1.1;       // Risk-Reward ratio (TP = RR * SL)
-input int    MagicNumber      = 19191919;  // Magic number
-input bool DeletePendingOnNewH1 = true; // option to delete pending orders on new H1 candle
-input int    ExpirationHours  = 24;        // Pending order expiration (hours)
+input double RiskPercent         = 0.25;       // Risk percent per trade (0.5 = 0.5%)
+input bool   UseTakeProfit       = true;      // Enable TP
+input ENUM_TIMEFRAMES TimeFrame  = PERIOD_H1;
+input double RRRatio             = 1.1;       // Risk-Reward ratio (TP = RR * SL)
+input int    MagicNumber         = 19191919;  // Magic number
+input bool DeletePendingOnNewH1  = true; // option to delete pending orders on new H1 candle
+input int    ExpirationHours     = 24;        // Pending order expiration (hours)
 
 // Session times (server time hours 0..23)
 input int LondonStartHour = 7;  // London session start hour (server time)
